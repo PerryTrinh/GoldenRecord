@@ -2,13 +2,49 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	max-height: 100%;
 	background: black;
 }
 
 img {
 	padding: 0;
-	display: block;
-	margin: 0 auto auto 0;
-	max-height: 100%;
+	display: inline;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 2%;
 	max-width: 100%;
+  max-height: 99vh;
+  height: auto;
 }
+
+.disk {
+	cursor: default;
+}
+
+span.text-content {
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  display: inline;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+
+#text {
+	display: inline;
+	position: absolute;
+	opacity: 1;
+}
+
+.map map:hover + span { opacity: 1 }
