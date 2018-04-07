@@ -1,0 +1,14 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+
+img {
+	padding: 0;
+	display: block;
+	margin: 0 auto auto 0;
+	max-height: 100%;
+	max-width: 100%;
+}
