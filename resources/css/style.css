@@ -18,33 +18,41 @@ img {
   height: auto;
 }
 
-.disk {
-	cursor: default;
-}
+.hotspot {
+    position: absolute;
+    border: 1px solid white;
+	}
 
-span.text-content {
-  background: rgba(0, 0, 0, 1);
-  color: white;
-  display: inline;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-}
+	div {
+		display: inline;
+	}
 
+	#star {
+		border-radius: 50%;
+		top: 475px; 
+		left: 210px; 
+		height: 50px; 
+		width: 50px;
+	}
 
-#text {
-	display: inline;
-	position: absolute;
-	opacity: 1;
-}
+	#disk {
+		border-radius: 50%;
+		top: 190px; 
+		left: 185px; 
+		height: 30px; 
+		width: 30px;
+	}
+	
+	.hotspot + * {
+    pointer-events: none;
+    opacity: 0;
+	}
+	
+	.hotspot:hover + * {
+    opacity: 1.0;
+	}
 
-.map map:hover + span { opacity: 1 }
+	.text {
+		position: absolute;
+		color: white;
+	}
