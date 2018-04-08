@@ -17,42 +17,88 @@ img {
   max-height: 99vh;
   height: auto;
 }
-
+	
 .hotspot {
-    position: absolute;
-    border: 1px solid white;
-	}
+	position: absolute;
+  border: 1px solid white;
+}
 
-	div {
-		display: inline;
-	}
+div {
+	display: inline;
+}
 
-	#star {
-		border-radius: 50%;
-		top: 475px; 
-		left: 210px; 
-		height: 50px; 
-		width: 50px;
-	}
+#star {
+	border-radius: 50%;
+	top: 60%; 
+	left: 11%; 
+	height: 28vh; 
+	width: 35vh;
+}
 
-	#disk {
-		border-radius: 50%;
-		top: 190px; 
-		left: 185px; 
-		height: 30px; 
-		width: 30px;
+#disk {
+	border-radius: 50%;
+	top: 17.5%;
+	left: 9%;
+	height: 25vh;
+	width: 25vh;
+}
+
+#disk_side {
+	top: 47%;
+	left: 9.5%;
+	height: 9.5vh;
+	width: 24vh;
+}
+
+#instructions {
+	top: 17%;
+	left: 27%;
+	height: 11vh;
+	width: 36vh;
+}
+
+#vertical {
+	top: 30%;
+	left: 33%;
+	height: 10vh;
+	width: 25vh;
+}
+
+#raster {
+	top: 42.5%;
+	left: 33.2%;
+	height: 10vh;
+	width: 13vh;
+}
+
+#verification {
+	top: 54.2%;
+	left: 33.2%;
+	height: 9.8vh;
+	width: 13vh;
+}
+
+#time {
+	top: 82%;
+	left: 34%;
+	height: 4.8vh;
+	width: 13vh;
+}
+
+.hotspot + * {
+  pointer-events: none;
+  opacity: 0;
 	}
 	
-	.hotspot + * {
-    pointer-events: none;
-    opacity: 0;
-	}
-	
-	.hotspot:hover + * {
-    opacity: 1.0;
-	}
+.hotspot:hover + * {
+  opacity: 1.0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
 
-	.text {
-		position: absolute;
-		color: white;
-	}
+.text {
+	position: absolute;
+	color: white;
+}
