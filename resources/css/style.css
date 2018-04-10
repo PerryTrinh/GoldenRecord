@@ -17,14 +17,17 @@ img {
   max-height: 99vh;
   height: auto;
 }
-	
-.hotspot {
-	position: absolute;
-  border: 1px solid white;
-}
 
 div {
 	display: inline;
+}
+
+p {
+	font: Arial;
+}
+	
+.hotspot {
+	position: absolute;
 }
 
 #star {
@@ -41,6 +44,10 @@ div {
 	left: 9%;
 	height: 25vh;
 	width: 25vh;
+}
+
+.Disk1 {
+	max-width: 80%;
 }
 
 #disk_side {
@@ -101,4 +108,6 @@ div {
 .text {
 	position: absolute;
 	color: white;
+	margin: 30px;
+	text-align: justify;
 }
