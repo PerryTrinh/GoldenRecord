@@ -2,7 +2,6 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background: black;
-	overflow: hidden;
 }
 
 img {
@@ -17,12 +16,26 @@ img {
   height: auto;
 }
 
+.DefaultText {
+	display: inline;
+	position: absolute;
+	margin: 30px;
+	margin-top: 30vh;
+
+	/* Hover off transition*/
+	-webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
 div {
 	display: inline;
 }
 
-p, h1, figcaption {
+p, h1, h3, figcaption {
 	font-family: "Arial";
+	color: white;
 }
 	
 .hotspot {
@@ -113,6 +126,12 @@ p, h1, figcaption {
 .hotspot + * {
   pointer-events: none;
   opacity: 0;
+
+  /* Hover off transition */
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .Market {
@@ -130,6 +149,14 @@ p, h1, figcaption {
 .hotspot:hover + * {
   opacity: 1.0;
   -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.hotspot:hover ~ .DefaultText {
+	opacity: 0.0;
+	-webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
