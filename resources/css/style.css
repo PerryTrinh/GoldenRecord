@@ -1,9 +1,8 @@
 html, body {
-	height: 100%;
 	margin: 0;
 	padding: 0;
-	max-height: 100%;
 	background: black;
+	overflow: hidden;
 }
 
 img {
@@ -22,8 +21,8 @@ div {
 	display: inline;
 }
 
-p {
-	font: Arial;
+p, h1, figcaption {
+	font-family: "Arial";
 }
 	
 .hotspot {
@@ -53,11 +52,7 @@ p {
 	width: 25vh;
 }
 
-.Disk1 {
-	max-width: 80%;
-}
-
-.Disk2 {
+.Disk1, .Disk2 {
 	max-width: 80%;
 }
 
@@ -75,11 +70,19 @@ p {
 	width: 36vh;
 }
 
+.Picture1 {
+	max-width: 90%;
+}
+
 #vertical {
 	top: 30%;
 	left: 33%;
 	height: 10vh;
 	width: 25vh;
+}
+
+.Vertical {
+	max-width: 90%;
 }
 
 #raster {
@@ -96,6 +99,10 @@ p {
 	width: 13vh;
 }
 
+.FirstPic {
+	max-width: 80%;
+}
+
 #time {
 	top: 82%;
 	left: 34%;
@@ -106,6 +113,18 @@ p {
 .hotspot + * {
   pointer-events: none;
   opacity: 0;
+}
+
+.Market {
+	max-width: 60%;
+}
+
+.Eating, .Newton {
+	max-width: 70%;
+}
+
+.Earth {
+	max-width: 50%;
 }
 	
 .hotspot:hover + * {
