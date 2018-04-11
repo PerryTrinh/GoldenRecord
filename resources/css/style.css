@@ -28,6 +28,9 @@ p {
 	
 .hotspot {
 	position: absolute;
+	-webkit-user-select: none;       
+	-moz-user-select: none; 
+	-ms-user-select: none; 
 }
 
 #star {
@@ -36,6 +39,10 @@ p {
 	left: 11%; 
 	height: 28vh; 
 	width: 35vh;
+}
+
+.Star1 {
+	max-width: 95%;
 }
 
 #disk {
@@ -47,6 +54,10 @@ p {
 }
 
 .Disk1 {
+	max-width: 80%;
+}
+
+.Disk2 {
 	max-width: 80%;
 }
 
@@ -95,7 +106,7 @@ p {
 .hotspot + * {
   pointer-events: none;
   opacity: 0;
-	}
+}
 	
 .hotspot:hover + * {
   opacity: 1.0;
