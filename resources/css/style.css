@@ -4,6 +4,10 @@ html, body {
 	background: black;
 }
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
 img {
 	padding: 0;
 	display: inline;
@@ -11,7 +15,7 @@ img {
 	margin-right: auto;
 	margin-bottom: auto;
 	margin-left: 2%;
-	max-width: 100%;
+	max-width: 99%;
   max-height: 99vh;
   height: auto;
 }
@@ -40,6 +44,8 @@ p, h1, h3, figcaption {
 	
 .hotspot {
 	position: absolute;
+	max-height: 98vh;
+	max-width: 99%;
 	-webkit-user-select: none;       
 	-moz-user-select: none; 
 	-ms-user-select: none; 
