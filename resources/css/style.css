@@ -1,132 +1,132 @@
 html, body {
-	margin: 0;
-	padding: 0;
-	background: black;
+  margin: 0;
+  padding: 0;
+  background: black;
 }
 
 html::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 img {
-	padding: 0;
-	display: inline;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: auto;
-	margin-left: 2%;
-	max-width: 99%;
+  padding: 0;
+  display: inline;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: 2%;
+  max-width: 99%;
   max-height: 99vh;
   height: auto;
 }
 
 .DefaultText {
-	display: inline;
-	position: absolute;
-	margin: 30px;
-	margin-top: 30vh;
+  display: inline;
+  position: absolute;
+  margin: 30px;
+  margin-top: 30vh;
 
-	/* Hover off transition*/
-	-webkit-transition: opacity 500ms;
+  /* Hover off transition*/
+  -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
 div {
-	display: inline;
+  display: inline;
 }
 
 p, h1, h3, figcaption {
-	font-family: "Arial";
-	color: white;
+  font-family: "Arial";
+  color: white;
 }
 	
 .hotspot {
-	position: absolute;
-	max-height: 98vh;
-	max-width: 99%;
-	-webkit-user-select: none;       
-	-moz-user-select: none; 
-	-ms-user-select: none; 
+  position: absolute;
+  max-height: 98vh;
+  max-width: 99%;
+  -webkit-user-select: none;       
+  -moz-user-select: none; 
+  -ms-user-select: none; 
 }
 
 #star {
-	border-radius: 50%;
-	top: 60%; 
-	left: 11%; 
-	height: 28vh; 
-	width: 35vh;
+  border-radius: 50%;
+  top: 60%; 
+  left: 11%; 
+  height: 28vh; 
+  width: 35vh;
 }
 
 .Star1 {
-	max-width: 95%;
+  max-width: 95%;
 }
 
 #disk {
-	border-radius: 50%;
-	top: 17.5%;
-	left: 9%;
-	height: 25vh;
-	width: 25vh;
+  border-radius: 50%;
+  top: 17.5%;
+  left: 9%;
+  height: 25vh;
+  width: 25vh;
 }
 
 .Disk1, .Disk2 {
-	max-width: 80%;
+  max-width: 80%;
 }
 
 #disk_side {
-	top: 47%;
-	left: 9.5%;
-	height: 9.5vh;
-	width: 24vh;
+  top: 47%;
+  left: 9.5%;
+  height: 9.5vh;
+  width: 24vh;
 }
 
 #instructions {
-	top: 17%;
-	left: 27%;
-	height: 11vh;
-	width: 36vh;
+  top: 17%;
+  left: 27%;
+  height: 11vh;
+  width: 36vh;
 }
 
 .Picture1 {
-	max-width: 90%;
+  max-width: 90%;
 }
 
 #vertical {
-	top: 30%;
-	left: 33%;
-	height: 10vh;
-	width: 25vh;
+  top: 30%;
+  left: 33%;
+  height: 10vh;
+  width: 25vh;
 }
 
 .Vertical {
-	max-width: 90%;
+  max-width: 90%;
 }
 
 #raster {
-	top: 42.5%;
-	left: 33.2%;
-	height: 10vh;
-	width: 13vh;
+  top: 42.5%;
+  left: 33.2%;
+  height: 10vh;
+  width: 13vh;
 }
 
 #verification {
-	top: 54.2%;
-	left: 33.2%;
-	height: 9.8vh;
-	width: 13vh;
+  top: 54.2%;
+  left: 33.2%;
+  height: 9.8vh;
+  width: 13vh;
 }
 
 .FirstPic {
-	max-width: 80%;
+  max-width: 80%;
 }
 
 #time {
-	top: 82%;
-	left: 34%;
-	height: 4.8vh;
-	width: 13vh;
+  top: 82%;
+  left: 34%;
+  height: 4.8vh;
+  width: 13vh;
 }
 
 .hotspot + * {
@@ -141,15 +141,15 @@ p, h1, h3, figcaption {
 }
 
 .Market {
-	max-width: 60%;
+  max-width: 60%;
 }
 
 .Eating, .Newton {
-	max-width: 70%;
+  max-width: 70%;
 }
 
 .Earth {
-	max-width: 50%;
+  max-width: 50%;
 }
 	
 .hotspot:hover + * {
@@ -161,17 +161,17 @@ p, h1, h3, figcaption {
 }
 
 .hotspot:hover ~ .DefaultText {
-	opacity: 0.0;
-	-webkit-transition: opacity 500ms;
+  opacity: 0.0;
+  -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
 .text {
-	position: absolute;
-	color: white;
-	margin: 30px;
-	text-align: justify;
+  position: absolute;
+  color: white;
+  margin: 30px;
+  text-align: justify;
 }
 
